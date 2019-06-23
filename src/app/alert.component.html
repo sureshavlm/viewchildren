@@ -1,0 +1,9 @@
+<div *ngIf="hidden == false" >
+  	<div class="backdrop" (click)="hide()"></div>
+	<div class="modal">
+	  <ng-content></ng-content>
+	  <div>
+	      <button (click)="hide()">OK</button>
+	  </div>
+	</div>
+</div>
